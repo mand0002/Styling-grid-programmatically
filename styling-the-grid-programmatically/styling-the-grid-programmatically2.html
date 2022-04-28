@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid</title>
+    <style>
+        .content{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 5px;
+        }
+        div{
+            padding: 50px;
+            text-align: center;
+            border-style: solid;
+            font-size: 2em;
+            background-color: blue;
+        }
+        .s1{
+            grid-column: 1 / 2;
+        }
+        .s2{
+            grid-column: 2 / 3;
+        }       
+        .s3{
+            grid-column: 3 / 4;
+        }
+        .s4{
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+        .s5{
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }       
+        .s6{
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+        }
+        .s7{
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
+        .s8{
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+        }       
+        .s9{
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+        }
+        .s10{
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;
+        }
+        .s11{
+            grid-column: 2 / 3;
+            grid-row: 4 / 5;
+        }       
+        .s12{
+            grid-column: 3 / 4;
+            grid-row: 4 / 5;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="move()">MOVE</button>
+    <main class="content">
+        <div id="s1">1</div>
+        <div id="s2">2</div>
+        <div id="s3">3</div>
+        <div id="s4">4</div>
+        <div id="s5">5</div>
+        <div id="s6">6</div>
+        <div id="s7">7</div>
+        <div id="s8">8</div>
+        <div id="s9">9</div>
+        <div id="s10">10</div>
+        <div id="s11">11</div>
+        <div id="s12">12</div>  
+    </main>
+
+</body>
+</html>
